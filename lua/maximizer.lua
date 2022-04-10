@@ -14,8 +14,8 @@ M.toggle = function()
 			end
 		end
 
-		if #maximizer.wins < #ids then
-			vim.cmd("wincmd _")
+		if #ids < #maximizer.wins then
+			vim.cmd("wincmd _ | wincmd =")
 		end
 
 		vim.g.maximizer = {
