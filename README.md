@@ -24,17 +24,17 @@ This plugin must be explicitly enabled by using `require("maximizer").setup({})`
 
 ```lua
 require("maximizer").setup({
-	status = {
-		enable = true, -- nil or false to disable
-		text = "Maximizer is active!",
-		blend = 10,
-		position = {
-			top = true,
-			left = false,
-		},
-	},
+  status = {
+    enable = true, -- nil or false to disable
+    text = "Maximizer is active!",
+    blend = 10,
+    position = {
+      top = true,
+      left = false,
+    },
+  },
   -- toggle keymap
-	keymap = {
+  keymap = {
     enable = true, -- nil or false to disable
     modes = { "i", "n" },
     rhs = "<C-w>z"
